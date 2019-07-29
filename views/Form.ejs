@@ -6,20 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StaHotel.com</title>
     <link type="text/css" href="/assets/style.css" rel="stylesheet">
-     <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    
-        <% include header.ejs %>
-        <h1 id="form">Form</h1>
-    <section class="main">
+
+    <% include header.ejs %>
+    <h1 id="form">Form</h1>
+    <section class="main" style="filter:blur(3px);">
         </section>
-    <section></section>
+    <section class="form1">
+        <form action="/Form" method="post" ">
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="name" placeholder="Your name.." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Your Order">Your Order</label>
+                </div>
+                <div class="col-75">
+                    <input type="order" id="order" name="order" placeholder="Your Order" required>
+                </div>
+            </div>
+             <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+        </form>
+    </section>
 </body>
     <script src="/assets/script.js"></script>
    

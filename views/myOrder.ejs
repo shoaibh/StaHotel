@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StaHotel.com</title>
+    <link type="text/css" href="/assets/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <% include header.ejs %>
+    <section class="main" style="filter:blur(3px);">
+        </section>
+    <div class="order"><h3 id="menu">My Orders</h3>
+        <div class="menu-itemss">
+            <ul>
+                <% for(var i=0; i< orders.length; i++){ %>
+                <li><h2>
+                    <%= orders[i].item %>
+                    </h2>
+                    <div style="margin:40px 0 0 0px;">Created By <%= orders[i].name %></div>
+                <button style="color:white; font-size: 16px; background-color: black; box-shadow: none; padding:4px; margin-top:20px;" class="delete">delete</button></li>
+                <% } %>
+            </ul>
+        </div></div>
+    <button id="button" ><a href="/Form">Place Another Order</a></button>
+</body>
+    <script src="/assets/script.js"></script>
+   <script>console.log(window.location.href)</script>
+</html>
