@@ -21,7 +21,7 @@ header > div{
 header nav ul{
     width: 100%;
     display: flex;
-    margin-top: 10px;
+    margin-top: 4%;
 }
 header nav ul li{
     margin-right: 50px;
@@ -35,13 +35,15 @@ header nav ul li a{
 }
 .main{
     background-image: url('img/1.jpg');
-    min-height: 680px;
+    height: 700px;
     background-size: cover;
     width: 100%;
     position: fixed;
     z-index: 0;
     filter: blur(0px);
     transition: all 1s ease;
+    display: flex;
+    flex-wrap: wrap;
 }
 }
 .menu{
@@ -64,23 +66,25 @@ header nav ul li a{
     color: black;
     position: absolute;
     top: 759px;
-    margin-left: 130px;
+    width: 100%;
 }
 .menu-items ul{
 display: flex;
     list-style-type: none;
     flex-wrap: wrap;
-    margin-left: 10px;
 }
 .menu-items ul li{
-    padding: 100px;
-    margin: 60px 20px 20px 20px; 
+    width: 30%;
+    margin: 50px auto;
+    height: 200px;
     font-size: 20px;
     border-radius: 29px;
     box-shadow: 3px 3px 8px  black;
     background-color: black;
     opacity: 0.6;
     color: white;
+    text-align: center;
+    line-height: 20px;
 }
 .welcome{
     position: fixed;
@@ -94,7 +98,7 @@ display: flex;
 }
 
 .welcome h3{
-    transform: translateX(-40px);
+    transform: translateX(-80px);
 }
 .blur{
     filter: blur(4px);
@@ -134,4 +138,108 @@ display: flex;
     top: 90px;
     left: 45%;
     z-index: 9999999;
+}
+.form1{
+    background-color: white;
+    opacity: 0.7;
+    position: absolute;
+    top: 140px;
+    left: 30%;
+    width: 450px;
+    height: auto;
+    padding: 40px;
+    border-radius: 5px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input[type=text], input[type=order], input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.order{
+    
+}
+.order h3{
+    position: absolute;
+    top: 75px;
+    left: 40%;
+    padding: 10px 22px 10px 22px;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    font-size: 40px;
+    border-radius: 29px;
+    box-shadow: 3px 3px 8px  black
+}
+.menu-itemss{
+    z-index: 992;
+    color: black;
+    position: absolute;
+    top: 89px;
+    margin: auto;
+    justify-content: center;
+}
+.menu-itemss ul{
+display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center
+}
+.menu-itemss ul li{
+    padding: 100px;
+    margin: 60px 20px 20px 20px; 
+    font-size: 20px;
+    border-radius: 29px;
+    box-shadow: 3px 3px 8px  black;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    
 }
