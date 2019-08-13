@@ -1,6 +1,19 @@
 *{
     padding: 0;
     margin: 0px;
+    font-family: 'Indie Flower', cursive;
+}
+#back div{
+    font-size: 40px;
+    margin-left: 80px;
+    color: azure;
+}
+#back nav ul{
+    margin-right: 50px;
+    
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
 }
 
 header{
@@ -13,24 +26,17 @@ header{
     position: fixed;
     z-index: 99999;
 }
-header > div{
-     margin-left: 20px;
-    font-size: 30px;
-    color: azure;
-}
-header nav ul{
-    width: 100%;
-    display: flex;
-    margin-top: 4%;
-}
+
 header nav ul li{
-    margin-right: 50px;
+    margin-right: 60px;
     list-style-type: none;
+    border-radius: 5px;
+    padding: 3px;
 }
 header nav ul li a{
     text-decoration: none;
     font-size: 20px;
-    color: white;
+    color: blanchedalmond;
     transition: all 2s ease;
 }
 .main{
@@ -52,7 +58,7 @@ header nav ul li a{
 .menu h3{
     position: absolute;
     top: 739px;
-    left: 40%;
+    left: 43%;
     padding: 10px 22px 10px 22px;
     background-color: black;
     opacity: 0.6;
@@ -89,26 +95,23 @@ display: flex;
 .welcome{
     position: fixed;
     z-index: 9999;
-     left: 35%;
-    top: 250px;
+     left: 40%;
+    top: 220px;
     color: white;
-    
     font-size: 40px;
     
 }
 
 .welcome h3{
     transform: translateX(-80px);
+   
 }
 .blur{
     filter: blur(4px);
 }
 .active{
-    color: black !important;
-    background-color: beige;
-    padding: 5px;
-    border-radius: 7px;
     transition: all 1s ease;
+    background-color: white;
 }
 #button{
     position: fixed;
@@ -141,7 +144,7 @@ display: flex;
 }
 .form1{
     background-color: white;
-    opacity: 0.7;
+    opacity: 0.6;
     position: absolute;
     top: 140px;
     left: 30%;
@@ -182,8 +185,8 @@ label {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
+  background-color: oldlace;
+  color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -192,7 +195,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: orange;
 }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -241,5 +244,33 @@ display: flex;
     background-color: black;
     opacity: 0.6;
     color: white;
+}
+
+.menu-items ul li{
+    font-size: 30px;
+    line-height: 80px;
+}
+
+
+
+@media screen and (max-width: 790px) {
+    header{
+        display: block;
+    }
+    header> div{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
     
+    header nav ul{
+        margin: auto;
+        text-align: center;
+        text-align-last: center;
+    }
+    header nav {
+        margin-left: 30%;
+        text-align: center;
+        text-align-last: center;
+    }
 }

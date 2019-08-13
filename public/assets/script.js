@@ -6,7 +6,7 @@ $(document).ready(function(){
        }
      else{var last = $(window).scrollTop();
  var l = $(window).scroll(function(){
-    var last = $(window).scrollTop();
+    var last =$(window).scrollTop();
     if(last>300){
      $('.main').addClass('blur');
         $('.welcome').fadeOut(1000);
@@ -38,9 +38,7 @@ $('form').on('submit', function(){
 });
     
     $('.delete').on('click',function(){
-        console.log('helo')
         var item = $(this)[0].parentElement.firstChild.innerText
-        console.log(item)
         $.ajax({
             type:'DELETE',
             url:'/myOrder/'+item,
