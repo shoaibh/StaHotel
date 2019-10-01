@@ -2,8 +2,7 @@ var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var mongoose = require('mongoose');
 
-// mongoose.connect('mongodb+srv://shoaib:shoaib@cluster0-pntjq.mongodb.net/test?retryWrites=true&w=majority',{useNewUrlParser: true})
-mongoose.connect('mongodb://127.0.0.1/starhotel',{useNewUrlParser: true})
+mongoose.connect('mongodb+srv://shoaib:shoaib@cluster0-pntjq.mongodb.net/test?retryWrites=true&w=majority',{useNewUrlParser: true})
 
 //MODEL
 var orderschema = new mongoose.Schema({
