@@ -51,7 +51,7 @@ header nav ul li a{
     display: flex;
     flex-wrap: wrap;
 }
-}
+
 .menu{
     
 }
@@ -95,7 +95,7 @@ display: flex;
 .welcome{
     position: fixed;
     z-index: 9999;
-     left: 40%;
+    left: 45%;
     top: 220px;
     color: white;
     font-size: 40px;
@@ -147,7 +147,7 @@ display: flex;
     opacity: 0.6;
     position: absolute;
     top: 140px;
-    left: 30%;
+    left: 32%;
     width: 450px;
     height: auto;
     padding: 40px;

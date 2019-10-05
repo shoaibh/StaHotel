@@ -6,8 +6,6 @@ app.set('view engine','ejs');
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-
-
 app.use(express.static('./public'));
 
 controller(app);
